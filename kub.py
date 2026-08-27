@@ -21,3 +21,9 @@ r = rektangel(10, 20, 5, 5)
 
 print("Area:", r.area())
 print("omkrets", r.omkrets())
+
+r.sätt_höjd(10)
+r.sätt_bredd(12)
+
+print("Ny area:", r.area())
+print("Ny omkrets:", r.omkrets())
