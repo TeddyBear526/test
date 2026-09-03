@@ -1,3 +1,5 @@
+import random
+
 class rektangel:
     def __init__(self, x, y, höjd, bredd):
         self.x = x
@@ -17,13 +19,11 @@ class rektangel:
     def omkrets(self):
         return 2 * (self.höjd + self.bredd)
 
-r = rektangel(10, 20, 5, 5)
+rektangel1 = rektangel(10, 20, 5, 5)
 
-print("Area:", r.area())
-print("omkrets", r.omkrets())
+for i in range(5):
+    rektangel1.sätt_höjd(random.randint(1, 10))
+    rektangel1.sätt_bredd(random.randint(1, 10))
 
-r.sätt_höjd(10)
-r.sätt_bredd(12)
-
-print("Ny area:", r.area())
-print("Ny omkrets:", r.omkrets())
+    print("Ny area:", rektangel1.area())
+    print("Ny omkrets", rektangel1.omkrets())
